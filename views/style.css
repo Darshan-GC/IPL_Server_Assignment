@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#topbar {
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0 200px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+#topbar div {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+#topbar h1 {
+  font-family: 'Scheherazade New', serif;
+  font-size: 34px;
+  color: #194491;
+  padding-left: 50px;
+}
+
+#topbar button {
+  font-family: 'Scheherazade New', serif;
+  font-size: 14.5px;
+  background-color: #194491;
+  color: white;
+  padding: 20px 25px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+#logo {
+  height: 100%;
+}
+
+/* Body */
+
+.fas {
+  color: #194491;
+}
+
+#body_section {
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+/* Details */
+
+#details {
+  position: absolute;
+  top: 20%;
+  left: 21%;
+  border-collapse: collapse;
+  min-width: 750px;
+  overflow: scroll;
+  height: 800px;
+}
+
+#info {
+  background-color: #7689a8;
+  color: #194491;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Scheherazade New', serif;
+  font-size: 24px;
+  letter-spacing: 1.3px;
+  position: sticky;
+  top: 10%;
+}
+
+#infoList {
+  text-align: left;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+
+#infoList:nth-of-type(even) {
+  background-color: #cad4de;
+}
+
+#details th {
+  padding: 12px 15px;
+}
+
+#details td {
+  padding: 12px 15px;
+}
+
+.far:hover {
+  scale: 1.5;
+}
+
+#button button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #7689a8;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#infoList i {
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#notFound {
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #194491;
+}
+
+.commentBox button {
+  background-color: #194491;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#div {
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99;
+}

@@ -1,0 +1,52 @@
+doctype html 
+html 
+  head 
+    title Players
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"  crossorigin="anonymous" )
+    style 
+        include ./style.css
+  body 
+    div#topbar 
+      div 
+        image(src='views/Utiles/ipllogo.jpg' alt="logo" id="logo")
+        h1 IPL 2021
+      button(onclick="move()") HOME
+      script.
+         function move() {
+           window.location.href = 'http://localhost:3000'
+        }
+     
+      
+    section#body_section
+       table#details
+         thead 
+            tr#info 
+              th  PlayerName
+              th  From 
+              th  Price 
+              th  Playing Status 
+              th  Description
+              th  View Profile
+         tbody
+            each val in data
+             tr#infoList
+              td=val.playerName
+              td=val.playingFor
+              td=val.price 
+              td=val.status 
+              td=val.Role    
+              td.commentBox 
+                button(id=val.playerName onclick=`comment(event)`) View Profile
+                script. 
+                  function comment(event){
+                    window.location.href = `http://localhost:3000/playerInfo/${event.target.id}` 
+                  }
+            else 
+             tr#infoList 
+              div#div
+               h1#notFound Team not Found!!
+         
+            
+ 
+       
